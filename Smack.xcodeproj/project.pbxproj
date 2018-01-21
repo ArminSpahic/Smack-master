@@ -20,6 +20,7 @@
 		2F6A885A2007B671002F2B70 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6A88592007B671002F2B70 /* CreateAccountVC.swift */; };
 		2F940D14200FF9EB00767996 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F940D13200FF9EB00767996 /* AuthService.swift */; };
 		2FE6D3B12010E549004A119F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6D3B02010E549004A119F /* RoundedButton.swift */; };
+		2FEDCF2220120A2600FB75BB /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEDCF2120120A2600FB75BB /* UserDataService.swift */; };
 		BC59CF5F79A6937C73C65178 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAA220092C8C091AB87E012 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		2F6A88592007B671002F2B70 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		2F940D13200FF9EB00767996 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2FE6D3B02010E549004A119F /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		2FEDCF2120120A2600FB75BB /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		9AF97EFE32E7834840564DAB /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		A2E969839A11AB0F68E0B36A /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				2F940D13200FF9EB00767996 /* AuthService.swift */,
+				2FEDCF2120120A2600FB75BB /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				2F6A884F2006843E002F2B70 /* ChannelVC.swift in Sources */,
 				2FE6D3B12010E549004A119F /* RoundedButton.swift in Sources */,
 				2F6A884D20068421002F2B70 /* ChatVC.swift in Sources */,
+				2FEDCF2220120A2600FB75BB /* UserDataService.swift in Sources */,
 				2F6A885A2007B671002F2B70 /* CreateAccountVC.swift in Sources */,
 				2F940D14200FF9EB00767996 /* AuthService.swift in Sources */,
 				2F6A88582007B4E8002F2B70 /* LoginVC.swift in Sources */,
@@ -436,11 +440,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Smack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Spaha.Smack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Smack/Supporting Files/Smack-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -454,11 +461,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Smack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Spaha.Smack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Smack/Supporting Files/Smack-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
