@@ -30,9 +30,9 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5CG-94-DsE" userLabel="bgView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7T-7I-h6i">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7T-7I-h6i" customClass="ModalView" customModule="Smack" customModuleProvider="target">
                     <rect key="frame" x="20" y="158.5" width="335" height="350"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VI-fc-u91">

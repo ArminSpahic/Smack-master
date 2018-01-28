@@ -142,7 +142,7 @@
                                 <rect key="frame" x="0.0" y="120" width="375" height="426"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xoX-6d-YDn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="xoX-6d-YDn" customClass="ChannelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xoX-6d-YDn" id="2LH-Pd-04x">
@@ -162,6 +162,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="dRv-3b-3ZU" id="2aY-7c-lO2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -195,6 +198,7 @@
                     </view>
                     <connections>
                         <outlet property="LoginBtn" destination="h7a-E8-Ite" id="vzc-Xq-e58"/>
+                        <outlet property="tableView" destination="0LN-mE-nJ6" id="ko3-mO-Ttb"/>
                         <outlet property="userImg" destination="ioB-kY-fuD" id="WPv-Zl-HBa"/>
                         <segue destination="SBH-b7-He8" kind="show" identifier="toLogin" id="sds-cT-9Cy"/>
                     </connections>
@@ -253,6 +257,9 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="SBH-b7-He8" eventType="touchUpInside" id="E1m-SB-inb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0m-Zh-TFA">
                                 <rect key="frame" x="62" y="330" width="251" height="30"/>
@@ -305,6 +312,10 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="VmK-qg-5M4">
+                                <rect key="frame" x="169" y="195.5" width="37" height="37"/>
+                                <color key="color" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -316,10 +327,17 @@
                             <constraint firstItem="uc5-ge-Tzr" firstAttribute="top" secondItem="CZ7-c6-OH1" secondAttribute="bottom" constant="40" id="d3A-lk-8J5"/>
                             <constraint firstItem="sCE-Fo-eRv" firstAttribute="centerX" secondItem="TLX-DK-QPl" secondAttribute="centerX" id="dQZ-cX-y5V"/>
                             <constraint firstItem="uc5-ge-Tzr" firstAttribute="centerX" secondItem="TLX-DK-QPl" secondAttribute="centerX" id="dyX-ob-Ntk"/>
+                            <constraint firstItem="VmK-qg-5M4" firstAttribute="centerY" secondItem="TLX-DK-QPl" secondAttribute="centerY" constant="-120" id="hsc-Cu-Hjq"/>
                             <constraint firstItem="B0m-Zh-TFA" firstAttribute="top" secondItem="sCE-Fo-eRv" secondAttribute="bottom" id="kKu-2b-c0h"/>
+                            <constraint firstItem="VmK-qg-5M4" firstAttribute="centerX" secondItem="TLX-DK-QPl" secondAttribute="centerX" id="t0O-ud-HdJ"/>
                             <constraint firstAttribute="trailing" secondItem="9uk-DV-hdj" secondAttribute="trailing" constant="10" id="yDj-UW-Q68"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTxt" destination="hHg-P0-PQP" id="i97-IN-sb3"/>
+                        <outlet property="spinner" destination="VmK-qg-5M4" id="y1g-nz-YYt"/>
+                        <outlet property="usernameTxt" destination="t76-Aj-TtK" id="92P-ax-1ix"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUb-ch-f61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

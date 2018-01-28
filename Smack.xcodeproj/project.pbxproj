@@ -20,12 +20,16 @@
 		2F6A88542007A819002F2B70 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6A88532007A819002F2B70 /* Constants.swift */; };
 		2F6A88582007B4E8002F2B70 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6A88572007B4E8002F2B70 /* LoginVC.swift */; };
 		2F6A885A2007B671002F2B70 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6A88592007B671002F2B70 /* CreateAccountVC.swift */; };
+		2F7257D7201B226000A12CE9 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7257D6201B226000A12CE9 /* ModalView.swift */; };
 		2F940D14200FF9EB00767996 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F940D13200FF9EB00767996 /* AuthService.swift */; };
 		2FB781062017E32900285C70 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB781052017E32900285C70 /* CircleImage.swift */; };
 		2FE6D3B12010E549004A119F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6D3B02010E549004A119F /* RoundedButton.swift */; };
 		2FE87ABE2019E76F00A69A8C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE87ABC2019E76F00A69A8C /* ProfileVC.swift */; };
 		2FE87ABF2019E76F00A69A8C /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE87ABD2019E76F00A69A8C /* ProfileVC.xib */; };
 		2FEDCF2220120A2600FB75BB /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEDCF2120120A2600FB75BB /* UserDataService.swift */; };
+		2FF0E0E8201E599D000EB1A8 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0E0E7201E599D000EB1A8 /* MessageService.swift */; };
+		2FF0E0EA201E59DC000EB1A8 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0E0E9201E59DC000EB1A8 /* Channel.swift */; };
+		2FF0E0EC201E77CF000EB1A8 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0E0EB201E77CF000EB1A8 /* ChannelCell.swift */; };
 		BC59CF5F79A6937C73C65178 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAA220092C8C091AB87E012 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,12 +52,16 @@
 		2F6A88532007A819002F2B70 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2F6A88572007B4E8002F2B70 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2F6A88592007B671002F2B70 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		2F7257D6201B226000A12CE9 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		2F940D13200FF9EB00767996 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2FB781052017E32900285C70 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		2FE6D3B02010E549004A119F /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		2FE87ABC2019E76F00A69A8C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		2FE87ABD2019E76F00A69A8C /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		2FEDCF2120120A2600FB75BB /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		2FF0E0E7201E599D000EB1A8 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		2FF0E0E9201E59DC000EB1A8 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = Smack/Services/Channel.swift; sourceTree = SOURCE_ROOT; };
+		2FF0E0EB201E77CF000EB1A8 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		9AF97EFE32E7834840564DAB /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		A2E969839A11AB0F68E0B36A /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +153,8 @@
 				2FE6D3B02010E549004A119F /* RoundedButton.swift */,
 				2F22244D201542AC00F5BA5B /* AvatarCell.swift */,
 				2FB781052017E32900285C70 /* CircleImage.swift */,
+				2F7257D6201B226000A12CE9 /* ModalView.swift */,
+				2FF0E0EB201E77CF000EB1A8 /* ChannelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +172,7 @@
 			children = (
 				2F940D13200FF9EB00767996 /* AuthService.swift */,
 				2FEDCF2120120A2600FB75BB /* UserDataService.swift */,
+				2FF0E0E7201E599D000EB1A8 /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -169,6 +180,7 @@
 		2F940D17200FFB4100767996 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2FF0E0E9201E59DC000EB1A8 /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,9 +281,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Smack/Pods-Smack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -284,13 +303,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smack-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F5BAAF6486AC846BF1C27765 /* [CP] Copy Pods Resources */ = {
@@ -317,11 +339,15 @@
 			files = (
 				2FE87ABE2019E76F00A69A8C /* ProfileVC.swift in Sources */,
 				2F6A884F2006843E002F2B70 /* ChannelVC.swift in Sources */,
+				2F7257D7201B226000A12CE9 /* ModalView.swift in Sources */,
 				2F22244C2015400900F5BA5B /* AvatarPickerVC.swift in Sources */,
 				2FE6D3B12010E549004A119F /* RoundedButton.swift in Sources */,
 				2FB781062017E32900285C70 /* CircleImage.swift in Sources */,
+				2FF0E0E8201E599D000EB1A8 /* MessageService.swift in Sources */,
+				2FF0E0EA201E59DC000EB1A8 /* Channel.swift in Sources */,
 				2F6A884D20068421002F2B70 /* ChatVC.swift in Sources */,
 				2FEDCF2220120A2600FB75BB /* UserDataService.swift in Sources */,
+				2FF0E0EC201E77CF000EB1A8 /* ChannelCell.swift in Sources */,
 				2F6A885A2007B671002F2B70 /* CreateAccountVC.swift in Sources */,
 				2F940D14200FF9EB00767996 /* AuthService.swift in Sources */,
 				2F6A88582007B4E8002F2B70 /* LoginVC.swift in Sources */,
